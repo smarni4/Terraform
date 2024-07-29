@@ -69,9 +69,9 @@ resource "aws_instance" "app_server" {    #"aws_instance": resource_type; "app_s
 * Create a new file `variables.tf` and write the required variables inside it as shown below.
 ```hcl
 variable "instance_name" {
-  description: "Name of the instance"
-  type: string
-  default: "Terraform_Demo"
+  description = "Name of the instance"
+  type = string
+  default = "Terraform_Demo"
 }
 ```
 * Now, we can refer this variable `instance_name` in our main.tf file as 
